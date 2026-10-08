@@ -43,6 +43,21 @@ fun ActivitasPertama(modifier: Modifier) {
             stringResource(R.string.Univ),
             fontSize = 22.sp
         )
+        Spacer(modifier = Modifier.height(25.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all=12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(R.color.card_0_bg)
+            )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.logoumy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all =5.dp)
 
     }
 }
